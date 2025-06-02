@@ -1,88 +1,173 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
 
-:root{
---Almost-White: hsl(0, 0%, 98%);
---Medium-Gray: hsl(0, 0%, 41%);
---Almost-Black: hsl(0, 0%, 8%);
+:root {
+  --Almost-White: hsl(0, 0%, 98%);
+  --Medium-Gray: hsl(0, 0%, 41%);
+  --Almost-Black: hsl(0, 0%, 8%);
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-     font-family: "Epilogue", sans-serif;
-     font-size: 18px;
-     max-width: 154opx;
-     margin: 0 auto;
+body {
+  font-family: "Epilogue", sans-serif;
+  font-size: 18px;
+  max-width: 154opx;
+  margin: 0 auto;
+  list-style: none;
 }
 
 /* nav */
-nav{
-    display: flex;
-    justify-content: space-between;
+nav {
+  display: flex;
+  justify-content: space-between;
 }
 
-ul{
-    display: none;
+ul {
+  display: none;
 }
 
-.container{
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 20px 12px;
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px 12px;
 }
 
 /* main */
 /* section-1 */
-#desktop-hero{
-    display: none;
+#desktop-hero {
+  display: none;
 }
 
-#section-1 img{
-    max-width: 100%;
-
+#section-1 img {
+  max-width: 100%;
 }
 
-h1{
-    font-weight: 700;
-    font-size: 2.2rem;
-    color: var(--Almost-Black);
-    text-align: center;
-    padding: 20px 0;
+h1 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: var(--Almost-Black);
+  text-align: center;
+  padding: 20px 0;
 }
-p{
+p {
+  color: var(--Medium-Gray);
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.5;
+}
+#section-2-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+#section-2-btn-wrapper > button {
+  background-color: var(--Almost-Black);
+  color: var(--Almost-White);
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 15px 25px;
+}
+
+#section-2-img-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0 45px 0;
+}
+#section-2-img-wrapper img {
+  max-width: 20%;
+}
+
+@media (min-width: 1024px) {
+  body {
+    min-height: 100vh;
+    width: 100%;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
     color: var(--Medium-Gray);
-    font-size: 18px;
     font-weight: 500;
-    text-align: center;
-    line-height: 1.5;
-}
-#section-2-btn-wrapper{
+    gap: 30px;
+    font-size: 18px;
+  }
+  #nav-div-1 {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
+  #menu-icon {
+    display: none;
+  }
+  nav button {
+    padding: 15px 25px;
+    border: 2px solid var(--Medium-Gray);
+    border-radius: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--Medium-Gray);
+  }
+
+  #mobile-hero {
+    display: none;
+  }
+  #desktop-hero {
+    display: block;
+  }
+  main {
     display: flex;
     justify-content: center;
-    padding: 20px 0;
-    
-}
-#section-2-btn-wrapper > button{
-    background-color: var(--Almost-Black);
-    color: var(--Almost-White);
-    border: none;
-    border-radius: 12px;
-    font-weight: 700;
-    font-size: 15px;
-    padding: 15px 25px;
-
-}
-
-#section-2-img-wrapper{
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: 30px 0 45px 0;
-}
-#section-2-img-wrapper img{
-    max-width: 20%;
+    flex-direction: row-reverse;
+  }
+  h1 {
+    font-size: 3.3rem;
+    width: 350px;
+    text-align: start;
+  }
+
+  p {
+    width: 350px;
+    font-weight: 500;
+    text-align: start;
+    line-height: 2;
+    margin-top: 20px;
+  }
+  #section-2-div-1{
+    margin-top: 70px;
+  }
+
+  #section-2-btn-wrapper {
+    display: flex;
+    justify-content: start;
+    line-height: 2;
+    margin-top: 30px;
+  }
+
+  #section-2-img-wrapper {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 150px;
+  }
+  #section-2-img-wrapper img {
+    max-width: 100%;
+  }
+  #section-1 {
+    width: 600px;
+    padding-right: 80px;
+    margin-bottom: 90px;
+  }
+  #section-1 img {
+    max-width: 100%;
+  }
 }
