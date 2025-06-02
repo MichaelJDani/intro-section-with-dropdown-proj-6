@@ -60,3 +60,29 @@ p{
     text-align: center;
     line-height: 1.5;
 }
+#section-2-btn-wrapper{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    
+}
+#section-2-btn-wrapper > button{
+    background-color: var(--Almost-Black);
+    color: var(--Almost-White);
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 15px 25px;
+
+}
+
+#section-2-img-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0 45px 0;
+}
+#section-2-img-wrapper img{
+    max-width: 20%;
+}
